@@ -18,7 +18,6 @@ export class PublicityChallengeComponent {
 
   constructor() {
     console.log('Hello PublicityChallengeComponent Component');
-    this.text = 'Hello World';
   }
 
 }
