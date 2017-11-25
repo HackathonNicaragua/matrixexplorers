@@ -21,7 +21,15 @@ import { PublicityChallengeComponent } from '../components/publicity-challenge/p
   declarations: [
     MyApp,
     HomePage,
-    RegistroPage
+    RegistroPage,
+    AvatarComponent,
+    ChallengeComponent,
+    ChallengeTypeComponent,
+    LevelComponent,
+    ProfileComponent,
+    ProfileChallengesComponent,
+    PublicityComponent,
+    PublicityChallengeComponent
   ],
   imports: [
     BrowserModule,
