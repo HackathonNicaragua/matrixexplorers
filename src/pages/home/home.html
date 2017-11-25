@@ -1,14 +1,43 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="navBar">
     <ion-title>
-      Ionic Blank
+      Inicio de Sesión
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div class="login-form">
+    <!--Logo-->
+    <img id="logo" src="../../assets/imgs/fondo (5).png"/>
+    <!--contenedor de inicio de sesion por email y contraseña-->
+    <div class="inputs-login">
+      <ion-list>
+        <ion-item id="input-user"> 
+          <ion-label><p>Email:</p></ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+
+        <ion-item id="input-password"> 
+            <ion-label><p>Contraseña:</p></ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+      </ion-list>
+    </div>
+
+    <!--botones de iniciar sesion o registrarse-->
+    <div class="login-register-buttons">
+      <button ion-button id="login">
+        Entrar
+      </button>
+      <button ion-button id="register" (click)="openRegister()">
+        Registrarse
+     </button>
+
+      <p id="other-register">O inicia sesión con 
+          <a href="#">Google</a> ó
+          <a href="#">Facebook</a>
+        </p>
+    </div>   
+  </div>
 </ion-content>
