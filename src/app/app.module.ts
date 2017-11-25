@@ -6,9 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-<<<<<<< HEAD
 import {RegistroPage} from '../pages/registro/registro';
-=======
 import { AvatarComponent } from '../components/avatar/avatar';
 import { ChallengeComponent } from '../components/challenge/challenge';
 import { ChallengeTypeComponent } from '../components/challenge-type/challenge-type';
@@ -18,7 +16,6 @@ import { ProfileChallengesComponent } from '../components/profile-challenges/pro
 import { PublicityComponent } from '../components/publicity/publicity';
 import { PublicityChallengeComponent } from '../components/publicity-challenge/publicity-challenge';
 
->>>>>>> release/0.0.2.3
 
 @NgModule({
   declarations: [
@@ -34,9 +31,7 @@ import { PublicityChallengeComponent } from '../components/publicity-challenge/p
   entryComponents: [
     MyApp,
     HomePage,
-<<<<<<< HEAD
-    RegistroPage
-=======
+    RegistroPage,
     AvatarComponent,
     ChallengeComponent,
     ChallengeTypeComponent,
@@ -45,7 +40,6 @@ import { PublicityChallengeComponent } from '../components/publicity-challenge/p
     ProfileChallengesComponent,
     PublicityComponent,
     PublicityChallengeComponent
->>>>>>> release/0.0.2.3
   ],
   providers: [
     StatusBar,
