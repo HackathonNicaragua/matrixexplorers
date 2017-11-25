@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {RegistroPage} from '../../pages/registro/registro';
 
 @Component({
   selector: 'page-home',
@@ -12,4 +13,7 @@ export class HomePage {
     
   }
 
+  openRegister(){
+    this.navCtrl.push(RegistroPage);
+  }
 }
