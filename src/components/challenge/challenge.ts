@@ -15,7 +15,8 @@ export class ChallengeComponent {
   id: string;
   IDChallengeType: string;
   name: string;
-  descripction: string;
+  description: string;
+  img: string;
   help: string;
   position: Array<any>;
   dateLimit: Date;
