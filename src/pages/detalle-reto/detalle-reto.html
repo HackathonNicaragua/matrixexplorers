@@ -1,0 +1,26 @@
+<!--
+  Generated template for the DetalleRetoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>detalleReto</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div><img src="{{'../../assets/imgs/' + item.img}}"/></div>
+  <div>{{item.name}}</div>
+  <div>{{item.description}}</div>
+  <div>likes {{item.likes}}</div>
+  <div>dislikes {{item.dislikes}}</div>
+  <div>experiencia {{item.experience}}</div>
+  <div>
+      <button ion-button (click)="showHelp(item.help)">Ayuda</button>
+  </div>
+</ion-content>

@@ -3,10 +3,14 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { HttpModule } from '@angular/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {RegistroPage} from '../pages/registro/registro';
+import { DetalleRetoPage } from '../pages/detalle-reto/detalle-reto';
+
+
 import { AvatarComponent } from '../components/avatar/avatar';
 import { ChallengeComponent } from '../components/challenge/challenge';
 import { ChallengeTypeComponent } from '../components/challenge-type/challenge-type';
@@ -20,6 +24,7 @@ import { PublicityChallengeComponent } from '../components/publicity-challenge/p
 import {PerfilPage} from '../pages/perfil/perfil';
 import {RetosPage} from '../pages/retos/retos';
 import {TabPerfilRetosPage} from '../pages/tab-perfil-retos/tab-perfil-retos';
+import { ChallengeProvider } from '../providers/challenge/challenge';
 
 @NgModule({
   declarations: [
@@ -28,6 +33,7 @@ import {TabPerfilRetosPage} from '../pages/tab-perfil-retos/tab-perfil-retos';
     RegistroPage,
     PerfilPage,
     RetosPage,
+    DetalleRetoPage,
     TabPerfilRetosPage,
     
     AvatarComponent,
@@ -41,6 +47,7 @@ import {TabPerfilRetosPage} from '../pages/tab-perfil-retos/tab-perfil-retos';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp, {
       tabsPlacement: 'top',
     })
@@ -52,6 +59,7 @@ import {TabPerfilRetosPage} from '../pages/tab-perfil-retos/tab-perfil-retos';
     RegistroPage,
     PerfilPage,
     RetosPage,
+    DetalleRetoPage,
     TabPerfilRetosPage,
     AvatarComponent,
     ChallengeComponent,
@@ -65,7 +73,8 @@ import {TabPerfilRetosPage} from '../pages/tab-perfil-retos/tab-perfil-retos';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ChallengeProvider
   ]
 })
 export class AppModule {}
