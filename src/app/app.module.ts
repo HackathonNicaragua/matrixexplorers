@@ -9,7 +9,12 @@ import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {RegistroPage} from '../pages/registro/registro';
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
 import {AvatarPage} from '../pages/avatar/avatar';
+>>>>>>> release/0.0.3.1
 import { DetalleRetoPage } from '../pages/detalle-reto/detalle-reto';
 
 
@@ -22,6 +27,10 @@ import { ProfileChallengesComponent } from '../components/profile-challenges/pro
 import { PublicityComponent } from '../components/publicity/publicity';
 import { PublicityChallengeComponent } from '../components/publicity-challenge/publicity-challenge';
 import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
+<<<<<<< HEAD
+>>>>>>> ac903244a616d7ab2eefc6884c28be1298739ece
+=======
+>>>>>>> release/0.0.3.1
 
 
 import {PerfilPage} from '../pages/perfil/perfil';
@@ -35,6 +44,12 @@ import { GeolocationPage } from '../pages/geolocation/geolocation';
   declarations: [
     MyApp,
     HomePage,
+<<<<<<< HEAD
+<<<<<<< HEAD
+    RegistroPage
+=======
+=======
+>>>>>>> release/0.0.3.1
     RegistroPage,
     AvatarPage,
     GeolocationPage,
@@ -51,6 +66,10 @@ import { GeolocationPage } from '../pages/geolocation/geolocation';
     PublicityComponent,
     PublicityChallengeComponent,
     ProgressBarComponent
+<<<<<<< HEAD
+>>>>>>> ac903244a616d7ab2eefc6884c28be1298739ece
+=======
+>>>>>>> release/0.0.3.1
   ],
   imports: [
     BrowserModule,
@@ -63,6 +82,12 @@ import { GeolocationPage } from '../pages/geolocation/geolocation';
   entryComponents: [
     MyApp,
     HomePage,
+<<<<<<< HEAD
+<<<<<<< HEAD
+    RegistroPage
+=======
+=======
+>>>>>>> release/0.0.3.1
     RegistroPage,
     AvatarPage,
     PerfilPage,
@@ -78,6 +103,10 @@ import { GeolocationPage } from '../pages/geolocation/geolocation';
     ProfileChallengesComponent,
     PublicityComponent,
     PublicityChallengeComponent
+<<<<<<< HEAD
+>>>>>>> ac903244a616d7ab2eefc6884c28be1298739ece
+=======
+>>>>>>> release/0.0.3.1
   ],
   providers: [
     StatusBar,
