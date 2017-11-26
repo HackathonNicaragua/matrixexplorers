@@ -17,14 +17,14 @@
       <font color = "#FBFCFC"> Seleccione su AVATAR inicial</font>
     </div>
 
+    <div class="col-md-4" *ngFor="let item of avatars">
+      <img src=" {{'../../assets/imgs/'+ item.img}}"/>
+      </div>
+    
                         <!--boton siguiente--> 
     <div class="button-nextAvatar" style="vertical-align: middle">
         <button ion-button round outline id="nextAvatar">
             <font color = "#FBFCFC">Siguiente</font>
           </button>
 </div>
-
-
-
-
 </ion-content>

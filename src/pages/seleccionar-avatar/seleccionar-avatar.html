@@ -11,8 +11,9 @@
   </ion-navbar>
 
 </ion-header>
-
-
 <ion-content padding>
 
+  <div class="col-md-4" *ngFor="let item of avatars">
+  <img src=" {{'../../assets/imgs/'+ item.img}}"/>
+  </div>
 </ion-content>
