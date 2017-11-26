@@ -9,15 +9,8 @@ import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {RegistroPage} from '../pages/registro/registro';
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
 import {AvatarPage} from '../pages/avatar/avatar';
->>>>>>> release/0.0.3.1
 import { DetalleRetoPage } from '../pages/detalle-reto/detalle-reto';
-
-
 import { AvatarComponent } from '../components/avatar/avatar';
 import { ChallengeComponent } from '../components/challenge/challenge';
 import { ChallengeTypeComponent } from '../components/challenge-type/challenge-type';
@@ -27,11 +20,6 @@ import { ProfileChallengesComponent } from '../components/profile-challenges/pro
 import { PublicityComponent } from '../components/publicity/publicity';
 import { PublicityChallengeComponent } from '../components/publicity-challenge/publicity-challenge';
 import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
-<<<<<<< HEAD
->>>>>>> ac903244a616d7ab2eefc6884c28be1298739ece
-=======
->>>>>>> release/0.0.3.1
-
 
 import {PerfilPage} from '../pages/perfil/perfil';
 import {RetosPage} from '../pages/retos/retos';
@@ -43,12 +31,6 @@ import { ChallengeProvider } from '../providers/challenge/challenge';
   declarations: [
     MyApp,
     HomePage,
-<<<<<<< HEAD
-<<<<<<< HEAD
-    RegistroPage
-=======
-=======
->>>>>>> release/0.0.3.1
     RegistroPage,
     AvatarPage,
     PerfilPage,
@@ -65,10 +47,6 @@ import { ChallengeProvider } from '../providers/challenge/challenge';
     PublicityComponent,
     PublicityChallengeComponent,
     ProgressBarComponent
-<<<<<<< HEAD
->>>>>>> ac903244a616d7ab2eefc6884c28be1298739ece
-=======
->>>>>>> release/0.0.3.1
   ],
   imports: [
     BrowserModule,
@@ -81,12 +59,6 @@ import { ChallengeProvider } from '../providers/challenge/challenge';
   entryComponents: [
     MyApp,
     HomePage,
-<<<<<<< HEAD
-<<<<<<< HEAD
-    RegistroPage
-=======
-=======
->>>>>>> release/0.0.3.1
     RegistroPage,
     AvatarPage,
     PerfilPage,
@@ -101,10 +73,6 @@ import { ChallengeProvider } from '../providers/challenge/challenge';
     ProfileChallengesComponent,
     PublicityComponent,
     PublicityChallengeComponent
-<<<<<<< HEAD
->>>>>>> ac903244a616d7ab2eefc6884c28be1298739ece
-=======
->>>>>>> release/0.0.3.1
   ],
   providers: [
     StatusBar,
