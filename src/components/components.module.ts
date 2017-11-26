@@ -8,6 +8,7 @@ import { ProfileChallengesComponent } from './profile-challenges/profile-challen
 import { ProfileFollowersComponent } from './profile-followers/profile-followers';
 import { PublicityComponent } from './publicity/publicity';
 import { PublicityChallengeComponent } from './publicity-challenge/publicity-challenge';
+import { ProgressBarComponent } from './progress-bar/progress-bar';
 @NgModule({
 	declarations: [AvatarComponent,
     ChallengeComponent,
@@ -17,7 +18,8 @@ import { PublicityChallengeComponent } from './publicity-challenge/publicity-cha
     ProfileChallengesComponent,
     ProfileFollowersComponent,
     PublicityComponent,
-    PublicityChallengeComponent],
+    PublicityChallengeComponent,
+    ProgressBarComponent],
 	imports: [],
 	exports: [AvatarComponent,
     ChallengeComponent,
@@ -27,6 +29,7 @@ import { PublicityChallengeComponent } from './publicity-challenge/publicity-cha
     ProfileChallengesComponent,
     ProfileFollowersComponent,
     PublicityComponent,
-    PublicityChallengeComponent]
+    PublicityChallengeComponent,
+    ProgressBarComponent]
 })
 export class ComponentsModule {}
