@@ -6,20 +6,30 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import {RegistroPage} from '../pages/registro/registro';
+
+
+import {PerfilPage} from '../pages/perfil/perfil';
+import {RetosPage} from '../pages/retos/retos';
+import {TabPerfilRetosPage} from '../pages/tab-perfil-retos/tab-perfil-retos';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    RegistroPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+      tabsPlacement: 'top',
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    RegistroPage
   ],
   providers: [
     StatusBar,

@@ -15,35 +15,33 @@
     <div class="inputs-registro">
         <ion-list>
           <ion-item id="input-nombre"> 
-              <ion-label floating>Nombre</ion-label>
+              <ion-label>Nombre</ion-label>
               <ion-input type="nombre"></ion-input>
           </ion-item>
            
-    <ion-item id="input-sexo"> 
+      <ion-item id="input-sexo"> 
       <ion-label>¿Eres chico o chica?</ion-label>
-      <ion-input type="imput-sexo"></ion-input>
-    </ion-item>
+     </ion-item>
 
-    <ion-item id="input-fechaNav"> 
-            <ion-label floating>Fecha nacimiento</ion-label>
-            <ion-input type="input-fechaNav"></ion-input>
+      <div class="imagen-one">
+          <img style= "float: left; margin: 1em;" height="100"       
+          src="../../assets/imgs/fondo (8).png" width="100">
 
-            <div class="input-seleccione">
-              <select>
-                <option> 17/11/97 </option>
-                <option> 18/12/98 </option>
-                <option> 20/1/90 </option>
-              </select>
-            </div> 
-            </label>
-          </ion-item>    
-          </ion-list>
-   </div>
+
+          <div class="imagen-two">
+              <img style= "float: right; margin: 1em;" height="100"       
+              src="../../assets/imgs/fondo (9).png" width="100">
+          </div>
+       </div>
+       </ion-list>
+      </div>
+      
                       <!--boton siguiente--> 
-  <div class="button-next">
-      <button ion-button round outline id="next">
-          Siguiente
-        </button>
-  </div>
- 
+<div class="centrado">
+    <div class="button-next" style="vertical-align: middle">
+        <button ion-button round outline id="next" (click)="openNext()">
+            <font color = "#FBFCFC">Siguiente</font>
+          </button>
+    </div>
+</div>
 </ion-content>
