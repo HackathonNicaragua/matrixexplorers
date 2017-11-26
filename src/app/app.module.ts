@@ -7,25 +7,29 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {RegistroPage} from '../pages/registro/registro';
-import {AvatarPage} from '../pages/avatar/avatar';
+
+
+import {PerfilPage} from '../pages/perfil/perfil';
+import {RetosPage} from '../pages/retos/retos';
+import {TabPerfilRetosPage} from '../pages/tab-perfil-retos/tab-perfil-retos';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    RegistroPage,
-    AvatarPage
+    RegistroPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+      tabsPlacement: 'top',
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    RegistroPage,
-    AvatarPage
+    RegistroPage
   ],
   providers: [
     StatusBar,
