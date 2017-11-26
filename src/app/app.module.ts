@@ -17,11 +17,19 @@ import { PublicityComponent } from '../components/publicity/publicity';
 import { PublicityChallengeComponent } from '../components/publicity-challenge/publicity-challenge';
 
 
+import {PerfilPage} from '../pages/perfil/perfil';
+import {RetosPage} from '../pages/retos/retos';
+import {TabPerfilRetosPage} from '../pages/tab-perfil-retos/tab-perfil-retos';
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     RegistroPage,
+    PerfilPage,
+    RetosPage,
+    TabPerfilRetosPage,
+    
     AvatarComponent,
     ChallengeComponent,
     ChallengeTypeComponent,
@@ -33,13 +41,18 @@ import { PublicityChallengeComponent } from '../components/publicity-challenge/p
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+      tabsPlacement: 'top',
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
     RegistroPage,
+    PerfilPage,
+    RetosPage,
+    TabPerfilRetosPage,
     AvatarComponent,
     ChallengeComponent,
     ChallengeTypeComponent,
