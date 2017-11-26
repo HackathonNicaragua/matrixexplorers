@@ -1,3 +1,19 @@
 page-registro {
-    //position: absolute;
+
+    ion-content{
+        background: url("../../assets/imgs/fondo (1).png");
+        background-size: 100%; 
+    }
+
+    #input-nombre, #input-sexo, #input-fechaNav {
+        
+        background-color: transparent;
+        p {
+            font-family: 'Roboto';
+        }
+    }
+    #next{
+        border-color: #FBFCFC;
+        position: relative;
+        }
 }
