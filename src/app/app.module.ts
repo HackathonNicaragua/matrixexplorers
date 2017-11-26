@@ -3,10 +3,14 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { HttpModule } from '@angular/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {RegistroPage} from '../pages/registro/registro';
+import { DetalleRetoPage } from '../pages/detalle-reto/detalle-reto';
+
+
 import { AvatarComponent } from '../components/avatar/avatar';
 import { ChallengeComponent } from '../components/challenge/challenge';
 import { ChallengeTypeComponent } from '../components/challenge-type/challenge-type';
@@ -15,11 +19,13 @@ import { ProfileComponent } from '../components/profile/profile';
 import { ProfileChallengesComponent } from '../components/profile-challenges/profile-challenges';
 import { PublicityComponent } from '../components/publicity/publicity';
 import { PublicityChallengeComponent } from '../components/publicity-challenge/publicity-challenge';
+import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 
 
 import {PerfilPage} from '../pages/perfil/perfil';
 import {RetosPage} from '../pages/retos/retos';
 import {TabPerfilRetosPage} from '../pages/tab-perfil-retos/tab-perfil-retos';
+import { ChallengeProvider } from '../providers/challenge/challenge';
 
 @NgModule({
   declarations: [
@@ -28,6 +34,7 @@ import {TabPerfilRetosPage} from '../pages/tab-perfil-retos/tab-perfil-retos';
     RegistroPage,
     PerfilPage,
     RetosPage,
+    DetalleRetoPage,
     TabPerfilRetosPage,
     
     AvatarComponent,
@@ -37,12 +44,14 @@ import {TabPerfilRetosPage} from '../pages/tab-perfil-retos/tab-perfil-retos';
     ProfileComponent,
     ProfileChallengesComponent,
     PublicityComponent,
-    PublicityChallengeComponent
+    PublicityChallengeComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp, {
-      tabsPlacement: 'top',
+      tabsPlacement: 'bottom',
     })
   ],
   bootstrap: [IonicApp],
@@ -52,6 +61,7 @@ import {TabPerfilRetosPage} from '../pages/tab-perfil-retos/tab-perfil-retos';
     RegistroPage,
     PerfilPage,
     RetosPage,
+    DetalleRetoPage,
     TabPerfilRetosPage,
     AvatarComponent,
     ChallengeComponent,
@@ -65,7 +75,8 @@ import {TabPerfilRetosPage} from '../pages/tab-perfil-retos/tab-perfil-retos';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ChallengeProvider
   ]
 })
 export class AppModule {}
