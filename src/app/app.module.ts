@@ -15,6 +15,7 @@ import { ProfileComponent } from '../components/profile/profile';
 import { ProfileChallengesComponent } from '../components/profile-challenges/profile-challenges';
 import { PublicityComponent } from '../components/publicity/publicity';
 import { PublicityChallengeComponent } from '../components/publicity-challenge/publicity-challenge';
+import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 
 
 import {PerfilPage} from '../pages/perfil/perfil';
@@ -37,7 +38,8 @@ import {TabPerfilRetosPage} from '../pages/tab-perfil-retos/tab-perfil-retos';
     ProfileComponent,
     ProfileChallengesComponent,
     PublicityComponent,
-    PublicityChallengeComponent
+    PublicityChallengeComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
