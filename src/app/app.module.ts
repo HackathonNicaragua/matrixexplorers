@@ -26,6 +26,7 @@ import {RetosPage} from '../pages/retos/retos';
 import {TabPerfilRetosPage} from '../pages/tab-perfil-retos/tab-perfil-retos';
 import { AvatarProvider } from '../providers/avatar/avatar';
 import { ChallengeProvider } from '../providers/challenge/challenge';
+import { GeolocationPage } from '../pages/geolocation/geolocation';
 
 @NgModule({
   declarations: [
@@ -33,11 +34,11 @@ import { ChallengeProvider } from '../providers/challenge/challenge';
     HomePage,
     RegistroPage,
     AvatarPage,
+    GeolocationPage,
     PerfilPage,
     RetosPage,
     DetalleRetoPage,
     TabPerfilRetosPage,
-    
     AvatarComponent,
     ChallengeComponent,
     ChallengeTypeComponent,
@@ -66,6 +67,7 @@ import { ChallengeProvider } from '../providers/challenge/challenge';
     DetalleRetoPage,
     TabPerfilRetosPage,
     AvatarComponent,
+    GeolocationPage,
     ChallengeComponent,
     ChallengeTypeComponent,
     LevelComponent,
