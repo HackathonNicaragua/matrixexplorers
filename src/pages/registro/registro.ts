@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {AvatarPage} from '../../pages/avatar/avatar';
 
 /**
  * Generated class for the RegistroPage page.
@@ -15,11 +16,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RegistroPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
+  }
+  openNext(){
+    this.navCtrl.push(AvatarPage);
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad RegistroPage');
-  }
 
 }
