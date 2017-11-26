@@ -14,7 +14,12 @@
 
 
 <ion-content padding>
-    <ion-card *ngFor="let item of challenges" (click)="showDetails(item)">
-      <img src="{{'../../assets/imgs/' + item.img}}"/>
-    </ion-card>
+  <h1>Elige tu reto</h1>
+  <ion-grid>
+    <ion-row>
+          <ion-col col-md-6 *ngFor="let item of challenges" (click)="showDetails(item)">
+              <img src="{{'../../assets/imgs/' + item.img}}"/>
+            </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

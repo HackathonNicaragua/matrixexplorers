@@ -51,7 +51,7 @@ import { ChallengeProvider } from '../providers/challenge/challenge';
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp, {
-      tabsPlacement: 'top',
+      tabsPlacement: 'bottom',
     })
   ],
   bootstrap: [IonicApp],
